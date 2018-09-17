@@ -15,7 +15,12 @@ class String
   end
 
   def count_sentences
-    sentence_count = self.split('.'||'?'||'!')
-    sentence_count.count
+    sentences_array = self.split('.'||'?'||'!')
+    sentence_count = 0
+    sentences_array.each do |one_sentence|
+      if one_sentence.sentence? || one_sentence.question? || one_sentence.exclamation?
+        sentence_count += 1
+      end
+    end
   end
 end
