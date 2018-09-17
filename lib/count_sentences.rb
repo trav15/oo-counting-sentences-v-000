@@ -18,6 +18,6 @@ class String
     sentence_count = self.split(/\.|\?|\!/)
     #binding.pry
     sentence_count.delete_if {|sentence| sentence.size < 2}
-    sentence_count.legnth
+    sentence_count.length
   end
 end
