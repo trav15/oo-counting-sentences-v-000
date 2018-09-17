@@ -22,5 +22,6 @@ class String
         sentence_count += 1
       end
     end
+    sentence_count
   end
 end
